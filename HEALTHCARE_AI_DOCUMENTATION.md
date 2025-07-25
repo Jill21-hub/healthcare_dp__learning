@@ -174,15 +174,15 @@ graph TD
 ```mermaid
 graph LR
     subgraph "MIT-BIH ECG Records"
-        NORMAL[Normal Records<br/>100, 101, 103, 105<br/>108, 112, 113, 117<br/>121, 122, 123]
-        ABNORMAL[Abnormal Records<br/>102, 104, 106, 107<br/>109, 111, 118, 119<br/>124, 200, 201, 202<br/>203, 205, 207, 208, 209]
+        NORMAL["Normal Records\n100, 101, 103, 105\n108, 112, 113, 117\n121, 122, 123"]
+        ABNORMAL["Abnormal Records\n102, 104, 106, 107\n109, 111, 118, 119\n124, 200, 201, 202\n203, 205, 207, 208, 209"]
     end
     
     subgraph "Signal Processing"
-        RAW[Raw ECG Signal<br/>360 Hz sampling]
-        FILTER[Bandpass Filter<br/>0.5-45 Hz]
-        SEGMENT[Windowing<br/>200-512 samples]
-        SCALE[Normalization<br/>MinMaxScaler (-1, 1)]
+        RAW["Raw ECG Signal\n360 Hz sampling"]
+        FILTER["Bandpass Filter\n0.5-45 Hz"]
+        SEGMENT["Windowing\n200-512 samples"]
+        SCALE["Normalization\nMinMaxScaler"]
     end
     
     NORMAL --> RAW
@@ -190,6 +190,7 @@ graph LR
     RAW --> FILTER
     FILTER --> SEGMENT
     SEGMENT --> SCALE
+
 ```
 
 **Dataset Details:**
