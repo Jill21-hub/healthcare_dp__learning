@@ -506,22 +506,22 @@ graph TD
 
 ### Development Timeline
 
-1. **Data Collection & Preparation** (Week 1-2)
+1. **Data Collection & Preparation** 
    - Dataset acquisition and validation
    - Preprocessing pipeline development
    - Data quality assessment
 
-2. **Model Development** (Week 3-6)
+2. **Model Development**
    - Individual model training and optimization
    - Cross-validation and evaluation
    - Model serialization and storage
 
-3. **System Integration** (Week 7-8)
+3. **System Integration** 
    - API development and testing
    - Frontend interface creation
    - Model integration and loading
 
-4. **Testing & Deployment** (Week 9-10)
+4. **Testing & Deployment** 
    - Comprehensive testing suite
    - Performance optimization
    - Deployment configuration
